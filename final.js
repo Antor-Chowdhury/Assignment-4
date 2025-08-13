@@ -10,3 +10,14 @@ function totalFine(fare) {
 }
 
 // Problem - 2
+
+function onlyCharacter(str) {
+  if (typeof str !== "string") {
+    return "Invalid";
+  } else {
+    const output = str.replaceAll(" ", "");
+    return output.toUpperCase();
+  }
+}
+
+// Problem - 3
