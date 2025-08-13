@@ -1,27 +1,3 @@
-// Problem - 1
-
-function totalFine(fare) {
-  if (typeof fare !== "number" || 0 >= fare) {
-    return "Invalid";
-  } else {
-    const fine = fare + fare * (20 / 100) + 30;
-    return fine;
-  }
-}
-
-// Problem - 2
-
-function onlyCharacter(str) {
-  if (typeof str !== "string") {
-    return "Invalid";
-  } else {
-    const output = str.replaceAll(" ", "");
-    return output.toUpperCase();
-  }
-}
-
-// Problem - 3
-
 function bestTeam(player1, player2) {
   if (typeof player1 !== "object" || typeof player2 !== "object") {
     return "Invalid";
@@ -38,4 +14,13 @@ function bestTeam(player1, player2) {
   }
 }
 
-// Problem - 4
+const output = bestTeam(
+  { name: "Brazil", foul: 5, cardY: 1, cardR: 0 },
+  { name: "Argentina", foul: 7, cardY: 0, cardR: 0 }
+);
+console.log(output);
+
+//   console.log(player1, player2);
+//   console.log(typeof player1);
+
+//   typeof player1 && typeof player2 !== "object"
