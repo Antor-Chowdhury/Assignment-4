@@ -57,3 +57,29 @@ function isSame(arr1, arr2) {
   }
   return true;
 }
+
+// Problem - 5
+
+function resultReport(marks) {
+  let average = 0;
+  let total = 0;
+  let passCount = 0;
+  let failCount = 0;
+
+  if (Array.isArray(marks) !== true) {
+    return "Invalid";
+  } else if (marks.length === 0) {
+    return { finalScore: 0, pass: 0, fail: 0 };
+  } else {
+    for (const mark of marks) {
+      total += mark;
+      average = Math.round(total / marks.length);
+      if (mark >= 40) {
+        passCount++;
+      } else {
+        failCount++;
+      }
+    }
+  }
+  return { finalScore: average, pass: passCount, fail: failCount };
+}
