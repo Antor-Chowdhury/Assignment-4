@@ -1,5 +1,3 @@
-// Problem - 1
-
 function totalFine(fare) {
   if (typeof fare !== "number" || 0 >= fare) {
     return "Invalid";
@@ -9,4 +7,5 @@ function totalFine(fare) {
   }
 }
 
-// Problem - 2
+const output = totalFine(200);
+console.log(output);
