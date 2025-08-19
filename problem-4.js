@@ -8,6 +8,8 @@ function isSame(arr1, arr2) {
     for (let i = 0; i < arr1.length; i++) {
       const val1 = arr1[i];
       const val2 = arr2[i];
+      //  if (arr1[i] !== arr2[i]) {   // compare values, not just type
+      // return false; ---> real answer
       if (typeof val1 !== typeof val2) {
         return false;
       }
@@ -16,5 +18,5 @@ function isSame(arr1, arr2) {
   return true;
 }
 
-const output = isSame([1, 2, 3], [1, 2, 3]);
+const output = isSame([11, 12], [21, 23]);
 console.log(output);
